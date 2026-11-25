@@ -1,0 +1,31 @@
+{
+  "name": "qore-cert",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "QoreCert \u2014 Post-Quantum Signed Certificates & On-Chain Verifier for QoreChain Testnet (Build Before Q-Day: Quantum Pass)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@qorechain/pqc": "^0.2.3",
+    "@qorechain/react": "^0.14.0",
+    "@qorechain/sdk": "^0.14.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0",
+    "@cosmjs/stargate": "^0.39.0"
+  }
+}

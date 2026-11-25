@@ -1,0 +1,212 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #e2e8f0;
+  background: #0b1120;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top right, #1e293b, #0b1120 60%);
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 6px 0 6px;
+  font-size: 32px;
+  color: #f8fafc;
+}
+
+.sub {
+  margin: 0;
+  color: #94a3b8;
+  max-width: 560px;
+}
+
+.walletBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.meta {
+  font-size: 12px;
+  color: #cbd5e1;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: #131c31;
+  color: #cbd5e1;
+  border: 1px solid #26354d;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabs button.active {
+  background: #0284c7;
+  color: #fff;
+  border-color: #38bdf8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+input,
+textarea {
+  background: #0b1120;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+button.primary {
+  background: #0ea5e9;
+  color: #082f49;
+  font-weight: 700;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.actions button:not(.primary) {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pill.ok {
+  display: inline-block;
+  background: #064e3b;
+  color: #6ee7b7;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.muted {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #38bdf8;
+  word-break: break-all;
+}
+
+.verifyBox {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.verifyBox.valid {
+  background: #064e3b;
+  border: 1px solid #10b981;
+}
+
+.verifyBox.invalid {
+  background: #450a0a;
+  border: 1px solid #ef4444;
+}
+
+.statusMsg {
+  margin-top: 12px;
+  padding: 10px;
+  background: #0f172a;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+  font-size: 13px;
+}
